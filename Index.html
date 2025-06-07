@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dropdown Menu</title>
+  <style>
+  .dropdown{
+    display: inline-block;
+  }
+    .dropdown button{
+      background-color: lightgrey;
+      color: black;
+      border: none;
+      padding: 5px 9px;
+      font-size: 2em;
+      font- style: bold;
+    }
+    .dropdown a{
+      display: block;
+      padding: 10px 25px;
+      text-decoration:none ;
+      color: blue;
+    }
+    .dropdown .content{
+      display: none;
+      position: absolute;
+     background-color: lightgrey;
+      min-width: 116px;
+      z-index: 1000;
+    }
+    .dropdown:hover .content{
+      display: block;
+    }
+    .dropdown:hover button{
+      background-color: tomato;
+    }
+    .dropdown a:hover{
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="dropdown">
+    <button>fruit</button>
+       <div class="content">
+         <a href="#">Apple</a>
+         <a href="#">Banana</a>
+         <a href="#">Mango</a>
+        </div> 
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nisi ipsa ratione optio, quibusdam distinctio facere dolor temporibus, saepe odio vitae tenetur officia, aliquam soluta non reprehenderit rerum obcaecati ut!</p>
+</body>
+</html>
