@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dropdown Menu</title>
+  <style>
+    body{
+      font-family: Arial,Sans-Serif;
+      margin:0 ;
+      padding: 0;
+    }
+    nav{
+     background-color: tomato; 
+  }
+    .navbar{
+list-style: none;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar li a{
+      color: lightblue;
+      text-decoration: none;
+      padding: 16px 10px;
+      display: block;
+    }
+    .navbar li:hover{
+      background-color: cyan;
+    }
+    .dropdown-Menu{
+      display: none;
+      position: absolute;
+      top:100%;
+      left: 0px;
+      padding: 0;
+      min-width: auto;
+      background-color: green;
+      z-index: 1000;
+       }
+     .dropdown-Menu li a{
+       padding: 10px 15px;
+       }
+     .dropdown:hover .dropdown-Menu{
+       display: block;
+     }
+     .dropdown-Menu li:hover{
+       background-color: grey;
+     }
+     </style>
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="dropdown">
+     <a href="#">Services</a>
+     <ul class="dropdown-Menu">
+      <li><a href="#">Web Development</a></li>
+      <li><a href="#">Graphic Design</a></li>
+      <li><a href="#">Content Writing</a></li>
+      </ul>
+     </li>
+      <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+</body>
+</html>
